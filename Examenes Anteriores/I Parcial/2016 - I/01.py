@@ -32,6 +32,8 @@ tipoDom = 'edu'
 # Algoritmo para los dos primeros literales
 # Recorro cada sitio de la lista
 for sitio in lista:
+
+  # Todo se trabajará con minúscula.
   sitio = sitio.lower().strip()
 	componentes = sitio.split('.')
 
@@ -44,18 +46,27 @@ for sitio in lista:
     # El sistema de referencia es donde se encuentra ubicado 'edu'
 		indEdu = componentes.index(tipoDom)
 		nombreUniversidad = componentes[indEdu - 1].strip()
+
+    # Debo asegurar unicidad, por ende debo preguntar si el
+    # sitio no se encuentra para agregarlo por vez única
 		if nombreUniversidad not in universidades:
 			universidades.append(nombreUniversidad)
+
+      # Así mismo obtengo el sitio web de la misma.
 			sitioUniversidad = ".".join(componentes[indEdu - 1: ])
 			sitiosWeb.append(sitioUniversidad)
+
+      # Aprovechando la unicidad, se pregunta si este sitio
+      # es de Ecuador
 			if 'ec' in componentes:
 				ecuador.append(nombreUniversidad)
 
-
+# Literal a
 print('En la lista aparecen {} universidades'.format(len(universidades)))
 for i, univ in enumerate(universidades):
 	print("\t{}) {}".format(i + 1, univ.upper()))
 
+# Literal b
 print('\nEn la lista aparecen {} universidades de Ecuador'.format(len(ecuador)))
 for i, univ in enumerate(ecuador):
   print("\t{}) {}".format(i + 1, univ.upper()))
