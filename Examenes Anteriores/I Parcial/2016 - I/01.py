@@ -71,3 +71,31 @@ print('\nEn la lista aparecen {} universidades de Ecuador'.format(len(ecuador)))
 for i, univ in enumerate(ecuador):
   print("\t{}) {}".format(i + 1, univ.upper()))
 
+# Literal c
+usuario = input("Ingrese el usuario: ")
+usuario = usuario.strip()
+
+# Se valida que el usuario no ingrese una cadena vacía.
+while len(usuario) == 0:
+  print("Nombre de usuario no válido.")
+  usuario = input("Ingrese el usuario: ")
+  usuario = usuario.strip()
+
+siglaUniversidad = input("Ingrese el nombre/sigla de la universidad: ")
+siglaUniversidad = siglaUniversidad.lower().strip()
+
+# Se valida el nombre de la universidad
+while siglaUniversidad not in universidades:
+  print("Nombre de universidad no válido.")
+  siglaUniversidad = input("Ingrese el nombre/sigla de la universidad: ")
+  siglaUniversidad = siglaUniversidad.lower().strip()
+
+# Una vez validado la universidad se procede a obtener su índice correspondiente
+# en la lista de universidades, para obtener el sitio web correspondiente
+indUni = universidades.index(siglaUniversidad)
+sitioUni = sitiosWeb[indUni]
+
+# Se arma el correo electrónico del usuario
+correo = usuario + "@" + sitioUni
+
+print("El correo electrónico del usuario es:", correo)
