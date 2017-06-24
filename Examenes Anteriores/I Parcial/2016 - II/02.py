@@ -178,5 +178,9 @@ porcentaje = (canTiendas / tiendasTotales) * 100
 print("Porcentaje: {:.2f}".format(porcentaje))
 
 # Literal 7
-promedioFutbol = M[:, :f].mean()
+
+# A partir de la suma de los productos, obtengo el promedio que requiero
+# para el total de cada producto de fútbol.
+
+promedioFutbol = sumaProductos[: f].mean()
 print("Promedio de ventas de productos de fútbol: {:.2f}".format(promedioFutbol))
