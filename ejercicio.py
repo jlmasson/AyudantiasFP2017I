@@ -14,7 +14,7 @@ for i in range(2, maximoPermitido + 1):
 
 			c += 1
 
-	if c == 1:
+	if c ==WW 1:
 
 		listaPrimos.append(i)
 
