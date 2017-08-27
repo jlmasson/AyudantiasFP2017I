@@ -1,0 +1,5 @@
+Empresa Telefonica de Guayaquil
+Cliente: 2061722895
+Detalle Deuda:
+04-356539 local:0.51 inter:2.00 total:2.51
+Total a Pagar:2.51

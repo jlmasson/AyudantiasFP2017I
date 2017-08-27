@@ -1,0 +1,5 @@
+Empresa Telefonica de Guayaquil
+Cliente: 1729478396
+Detalle Deuda:
+04-437289 local:0.12 inter:0.10 total:0.22
+Total a Pagar:0.22

@@ -1,0 +1,5 @@
+Empresa Telefonica de Guayaquil
+Cliente: 1302511926
+Detalle Deuda:
+04-325363 local:2.70 inter:0.60 total:3.30
+Total a Pagar:3.30

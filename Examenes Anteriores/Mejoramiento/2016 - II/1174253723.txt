@@ -1,0 +1,7 @@
+Empresa Telefonica de Guayaquil
+Cliente: 1174253723
+Detalle Deuda:
+04-430419 local:0.90 inter:1.50 total:2.40
+04-324426 local:0.00 inter:0.45 total:0.45
+04-283497 local:0.45 inter:1.35 total:1.80
+Total a Pagar:4.65

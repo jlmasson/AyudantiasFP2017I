@@ -1,0 +1,6 @@
+Empresa Telefonica de Guayaquil
+Cliente: 1278112648
+Detalle Deuda:
+04-443288 local:0.36 inter:1.50 total:1.86
+04-383056 local:1.50 inter:0.75 total:2.25
+Total a Pagar:4.11
