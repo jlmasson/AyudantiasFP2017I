@@ -94,3 +94,19 @@ def generaPaises(promedios, metrica, minimo, maximo):
 		f = open("{}.csv".format(metrica), "w")
 		f.write(cadena)
 		f.close()
+
+# Cargando el diccionario
+datos = cargarDatos("datos.txt")
+print("\nDatos:\n\n{}\n".format(datos))
+
+# Creando un diccionario países de prueba
+paises = {}
+paises["Ecuador"] = ["Guayaquil", "Quito", "Cuenca"]
+paises["Colombia"] = ["Bogota", "Cali", "Barranquilla"]
+
+# Cargando el diccionario de promedios por pais
+promedios = metricaPais(datos, paises)
+
+print("Promedios:\n\n{}\n".format(promedios))
+
+generaPaises(promedios, "temperatura", 23, 26)
